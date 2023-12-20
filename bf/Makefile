@@ -2,9 +2,11 @@
 LIB	= bf
 INCDIR	= ${MINIREL_HOME}/h
 INCS	= 
-SRCS	= 
+# INCS는 모징
+SRCS	= bf.c
 TESTS	= bftest.c
 OBJS	= ${SRCS:.c=.o}
+# 위의 코드가 말하는 것은, .c를 .o로 변환하라
 LIBS	= lib${LIB}.a
 
 #############################################################################
