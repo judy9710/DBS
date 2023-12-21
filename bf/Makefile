@@ -33,5 +33,6 @@ clean:
 	rm -f lib${LIB}.a *.o ${LIB}test *.bak *~
 
 .c.o:; $(CC) $(CFLAGS) -c $< -I. -I$(INCDIR)
+# -I option은 include path를 지칭하는 것임
 
 
